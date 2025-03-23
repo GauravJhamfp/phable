@@ -101,10 +101,10 @@ const AboutUs = () => {
                     </div>
                     <div className="row">
                         {[
-                            { name: "Elizabeth Graham", role: "CEO/Co-Founder", image: "images/person_1.jpg" },
-                            { name: "Jennifer Greive", role: "Co-Founder", image: "images/person_2.jpg" },
-                            { name: "Patrick Marx", role: "Marketing", image: "images/person_3.jpg" },
-                            { name: "Mike Coolbert", role: "Sales Manager", image: "images/person_4.jpg" }
+                            { name: "Gaurav Jha", role: "Frontend Developer", image: "images/person_3.jpg" },
+                            { name: "Ditipriya sen", role: "Backend Developer", image: "images/person_1.jpg" },
+                            { name: "Shubhangi Roy", role: "Marketing", image: "images/person_2.jpg" },
+                            { name: "Vaishali jaishwal", role: "Sales Manager", image: "images/person_4.jpg" }
                         ].map((teamMember, index) => (
                             <div key={index} className="col-md-6 col-lg-6 mb-5">
                                 <div className="block-38 text-center">

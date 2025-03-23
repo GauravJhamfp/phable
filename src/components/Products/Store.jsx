@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 
 const products = [
     { id: 1, name: "Bioderma", price: "$55.00", oldPrice: "$95.00", img: "images/product_01.png", sale: true },
@@ -11,6 +11,12 @@ const products = [
 ];
 
 const Store = () => {
+    const navigate = useNavigate();
+
+    const handleProductClick = id => {
+        navigate(`/shop-single/${id}`);
+    };
+
     return (
         <>
             {/* Breadcrumb */}
@@ -18,7 +24,7 @@ const Store = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 mb-0">
-                            <Link to="/">Home</Link> <span className="mx-2 mb-0">/</span> 
+                            <Link to="/">Home</Link> <span className="mx-2 mb-0">/</span>
                             <strong className="text-black">Store</strong>
                         </div>
                     </div>
@@ -39,8 +45,8 @@ const Store = () => {
                         {/* Filter by Reference */}
                         <div className="col-lg-6">
                             <h3 className="mb-3 h6 text-uppercase text-black d-block">Filter by Reference</h3>
-                            <button type="button" className="btn btn-secondary btn-md dropdown-toggle px-4" 
-                                id="dropdownMenuReference" data-toggle="dropdown">
+                            <button type="button" className="btn btn-secondary btn-md dropdown-toggle px-4"
+                                id="dropdownMenuReference" data-bs-toggle="dropdown">
                                 Reference
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenuReference">
@@ -57,7 +63,12 @@ const Store = () => {
                     {/* Product List */}
                     <div className="row">
                         {products.map((product) => (
-                            <div key={product.id} className="col-sm-6 col-lg-4 text-center item mb-4">
+                            <div
+                                key={product.id}
+                                className="col-sm-6 col-lg-4 text-center item mb-4"
+                                onClick={() => handleProductClick(product.id)}
+                                style={{ cursor: "pointer" }}
+                            >
                                 {product.sale && <span className="tag">Sale</span>}
                                 <Link to={`/product-details/${product.id}`}>
                                     <img src={product.img} alt={product.name} />
