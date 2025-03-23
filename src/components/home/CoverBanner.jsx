@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CoverBanner = () => {
     return (
@@ -8,14 +9,14 @@ const CoverBanner = () => {
                     <div className="row align-items-stretch section-overlap">
                         <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
                             <div className="banner-wrap bg-primary h-100">
-                                <a href="#" classNameName="h-100">
+                                <Link to="#" classNameName="h-100">
                                     <h5>
                                         Free <br /> Shipping
                                     </h5>
                                     <p>
                                         Amet sit amet dolor <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
                                     </p>
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
