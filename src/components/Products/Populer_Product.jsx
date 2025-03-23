@@ -38,7 +38,7 @@ const Populer_Product = () => {
                         </div>
                         <div className="col-sm-6 col-lg-4 text-center item mb-4">
 
-                            <a href="shop-single.html">  <img src={productImg} alt="Product" /></a>
+                            <a href="shop-single.html"> <img src={productImg} alt="Product" /></a>
                             <h3 className="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
                             <p className="price"><del>45.00</del> &mdash; $20.00</p>
                         </div>
