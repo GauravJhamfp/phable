@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="d-flex align-items-center justify-content-between">
             <div className="logo">
             <div className="site-logo">
-                <a href="/" className="js-logo-clone">Pharma</a>
+                <a href="/" className="js-logo-clone">Phable</a>
             </div>
             </div>
             <div className="main-nav d-none d-lg-block">

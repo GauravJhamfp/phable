@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductImage from '/images/product_03.png';
 
-const new_product = () => {
+const NewProduct = () => {
     return (
         <>
             <div className="site-section bg-light">
@@ -48,4 +48,4 @@ const new_product = () => {
     )
 }
 
-export default new_product
+export default NewProduct

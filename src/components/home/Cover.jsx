@@ -10,7 +10,7 @@ const Cover = () => {
                         <div className="col-lg-7 mx-auto order-lg-2 align-self-center">
                             <div className="site-block-cover-content text-center">
                                 <h2 className="sub-title">Effective Medicine, New Medicine Everyday</h2>
-                                <h1>Welcome To Pharma</h1>
+                                <h1>Welcome To Phable</h1>
                                 <p>
                                     <a href="#" className="btn btn-primary px-5 py-3">Shop Now</a>
                                 </p>

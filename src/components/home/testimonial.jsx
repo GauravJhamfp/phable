@@ -1,7 +1,7 @@
 import React from 'react'
 import testimonialImage from '/images/person_1.jpg';
 
-const testimonial = () => {
+const Testimonial = () => {
     return (
         <>
             <div className="site-section">
@@ -65,4 +65,4 @@ const testimonial = () => {
     )
 };
 
-export default testimonial;
+export default Testimonial;
