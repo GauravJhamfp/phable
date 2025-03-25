@@ -49,6 +49,7 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="icons">
+                        <Link to="/login" className="btn btn-light">Log In</Link>
                         <Link to="#" className="icons-btn d-inline-block js-search-open"><span className="icon-search"></span></Link>
                         <Link to="#" className="icons-btn d-inline-block bag">
                             <span className="icon-shopping-bag"></span>

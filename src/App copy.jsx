@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/common/Footer";
 import Populer_Product from "./components/Products/Populer_Product";
 import Cover from "./components/home/Cover";
 import NewProduct from "./components/Products/NewProduct";
