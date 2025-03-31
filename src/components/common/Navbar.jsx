@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthProvider";
+import Logout from "../../pages/Logout";
 
 const Navbar = () => {
+    const [authUser, setAuthUser] = useAuth()
     return <>
         <div className="site-navbar py-2">
             <div className="search-wrap">
@@ -49,7 +52,9 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="icons">
-                        <Link to="/login" className="btn btn-light">Log In</Link>
+                        {
+                            authUser ? <Logout /> :
+                                < Link to="/login" className="btn btn-light">Log In</Link>}
                         <Link to="#" className="icons-btn d-inline-block js-search-open"><span className="icon-search"></span></Link>
                         <Link to="#" className="icons-btn d-inline-block bag">
                             <span className="icon-shopping-bag"></span>
@@ -60,7 +65,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     </>;
 };
 

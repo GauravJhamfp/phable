@@ -77,7 +77,7 @@ const Populer_Product = () => {
         {/* View All Products Button */}
         <div className="row mt-5">
           <div className="col-12 text-center">
-            <Link to="/shop" className="btn btn-primary px-4 py-3">
+            <Link to="/store" className="btn btn-primary px-4 py-3">
               View All Products
             </Link>
           </div>
